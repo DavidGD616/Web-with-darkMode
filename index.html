@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Guerrero</title>
     <link rel="stylesheet" href="./static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="header__content">
                     <img class="header__logo" src="./static/images/logo-light.png" alt="">
-                <input type="checkbox" id="menu" class="menu__checkbox">
                 <ul class="menu">
                     <li class="menu__item">
                         <a href="#">Inicio</a>
@@ -34,8 +34,46 @@
         </div>
     </header>
 
+    <!-- hero -->
+
+    <section class="hero">
+        <div class="wrapper">
+            <div class="hero__content">
+                    <div class="hero__description">
+                        <h1 class="title__h1">
+                            Un aficionado al mundo de la programacion y el marketing digital.
+                        </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- about me -->
 
 
-    <script src="./src/js/index.js"></script>
+    <section class="aboutMe">
+        <div class="wrapper">
+            <div class="aboutMe__content">
+                <div class="aboutMe__container">
+                    <h2 class="aboutMe__h2">
+                        Acerca de David Guerrero
+                    </h2>
+                    <p class="copy">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias corporis ipsum dignissimos architecto doloremque recusandae quidem maiores blanditiis. Praesentium maxime laborum debitis iure temporibus, ipsa saepe magnam voluptas fugit!
+                    </p>
+                    <button class="aboutMe__button">Saber Mas</button>
+                </div>
+                <figure class="aboutMe__image">
+                    <img src="./static/images/hero.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./src/js/app.js"></script>
 </body>
 </html>
