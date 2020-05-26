@@ -1,0 +1,77 @@
+.header {
+  padding: 1em 0;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 3;
+}
+.header__logo {
+  height: 45px;
+  align-self: center;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid red;
+  }
+}
+
+.menu {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+}
+.menu__button {
+  border: 1px solid greenyellow;
+  width: 40px;
+  height: 40px;
+  background: url("/static/images/hamburger.svg") no-repeat center;
+}
+.menu a {
+  text-decoration: none;
+  padding: 2em;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+.menu__checkbox {
+  display: none;
+}
+.menu__checkbox:checked ~ .menu__button {
+  background: url(/static/images/icon-close.svg) no-repeat center;
+}
+.menu__checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+}
+
+:root {
+  --wrapperSpace: 1.5em;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */

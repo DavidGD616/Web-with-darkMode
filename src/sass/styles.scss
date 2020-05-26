@@ -1,0 +1,19 @@
+@import './header.scss';
+@import './menu.scss';
+
+:root{
+    --wrapperSpace: 1.5em;
+}
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
