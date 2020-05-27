@@ -1,0 +1,28 @@
+.footer{
+    text-align: center;
+    margin: 60px 0 0 0;
+
+    &__link{
+        display: block;
+        text-decoration: none;
+        margin-bottom: 2em;
+        font-weight: 300;
+        font-size: 18px;
+        color: #000000;
+    }
+
+    &__social{
+        display: grid;
+        grid-template-columns: repeat(3, 25px);
+        grid-column-gap: 1em;
+        justify-content: center;
+        margin: 2.5em 0;
+        // border: 1px solid red;
+    }
+    
+}
+
+.hr-footer{
+    width: 200px;
+    margin: 0 auto 0;
+}

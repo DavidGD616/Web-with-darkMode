@@ -2,6 +2,8 @@
 @import './menu.scss';
 @import './hero.scss';
 @import './aboutMe.scss';
+@import './skills.scss';
+@import './footer.scss';
 
 :root{
     --red: #ff3860;
@@ -42,7 +44,7 @@
     --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
     --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
     --nav-bg: var(--gray2);
-    --tag-bg: var(--gray4);
+    --tag-bg: var(--gray2);
     --code-bg: #22262f;
     --card-bg: var(--gray5);
     --overlay-bg: rgba(0,0,0,0.9);
@@ -73,5 +75,80 @@ body{
 hr{
     border: none;
     border-bottom: var(--h-border);
+}
+
+@mixin tag {
+    display: inline-block;
+    border-radius: 3px;
+    padding: .2em .5em .3em;
+    border-radius: 2px;
+    background: var(--tag-bg);
+    color: var(--text-color);
+    font-weight: 700;
+    margin: .25em .1em;
+    font-size: 1.3em;
+    border-radius: 4px;
+}
+
+.tag{
+    @include tag;
+
+    &-html{
+        background: #f16528;
+        color: #fff;
+    }
+
+    &-css{
+        color: #313244;
+        background: #f954be;
+    }
+
+    &-js{
+        color: #000;
+        background: #f0db4f;
+    }
+
+    &-fb{
+        background: #1774eb;
+        color: #f8f8f8;
+    }
+
+    &-github{
+        color: #fff;
+        background: #24292e;
+    }
+
+    &-web{
+        background-image: linear-gradient(90deg,#ff8901,#db1d5f);
+        font-weight: 700;
+        color: #fff;
+    }
+
+    @media screen and (min-width: 768px){
+        font-size: 2em;
+    }
+}
+
+@mixin icon {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+}
+
+.icon{
+    &__github{
+        @include icon;
+        background: url('/static/images/github.svg') no-repeat;
+        background-size: cover;
+    }
+    &__facebook{
+        @include icon;
+        background: url('/static/images/facebook.svg') no-repeat;
+    }
+    &__instagram{
+        @include icon;
+        background: url('/static/images/instagram.svg') no-repeat;
+        background-size: cover;
+    }
 }
 

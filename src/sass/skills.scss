@@ -1,0 +1,19 @@
+.skills{
+    text-align: center;
+    margin: 50px 0 100px;
+
+    @media screen and (min-width: 768px){
+        text-align: left;
+    }
+}
+
+.title__h2{
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 2em;
+
+    @media screen and (min-width: 768px){
+        text-align: center;
+        font-size: 2.3em;
+    }
+}

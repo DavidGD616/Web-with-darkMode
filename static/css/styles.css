@@ -104,9 +104,9 @@
 
 .aboutMe {
   text-align: center;
-  margin-top: 80px;
   padding-top: 50px;
   background-size: cover;
+  margin-bottom: 80px;
 }
 .aboutMe__button {
   border: 2px solid var(--orange);
@@ -119,6 +119,7 @@
   cursor: pointer;
   padding: 1em 2em;
   margin: 2em 0 1em;
+  outline: none;
 }
 .aboutMe__button:hover {
   background: var(--orange);
@@ -153,12 +154,70 @@
     grid-template-columns: 1fr 1fr;
   }
   .aboutMe__container {
-    width: 350px;
+    width: 380px;
+  }
+  .aboutMe__h2 {
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+  .aboutMe__button {
+    margin-top: 4em;
   }
   .aboutMe__image {
     grid-area: image;
     text-align: right;
+    height: 500px;
   }
+  .aboutMe__image img {
+    height: inherit;
+  }
+}
+
+.skills {
+  text-align: center;
+  margin: 50px 0 100px;
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    text-align: left;
+  }
+}
+
+.title__h2 {
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 2em;
+}
+@media screen and (min-width: 768px) {
+  .title__h2 {
+    text-align: center;
+    font-size: 2.3em;
+  }
+}
+
+.footer {
+  text-align: center;
+  margin: 60px 0 0 0;
+}
+.footer__link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 2em;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+}
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
+  grid-column-gap: 1em;
+  justify-content: center;
+  margin: 2.5em 0;
+}
+
+.hr-footer {
+  width: 200px;
+  margin: 0 auto 0;
 }
 
 :root {
@@ -200,7 +259,7 @@
   --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
   --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
   --nav-bg: var(--gray2);
-  --tag-bg: var(--gray4);
+  --tag-bg: var(--gray2);
   --code-bg: #22262f;
   --card-bg: var(--gray5);
   --overlay-bg: rgba(0,0,0,0.9);
@@ -229,6 +288,70 @@ body {
 hr {
   border: none;
   border-bottom: var(--h-border);
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  border-radius: 2px;
+  background: var(--tag-bg);
+  color: var(--text-color);
+  font-weight: 700;
+  margin: 0.25em 0.1em;
+  font-size: 1.3em;
+  border-radius: 4px;
+}
+.tag-html {
+  background: #f16528;
+  color: #fff;
+}
+.tag-css {
+  color: #313244;
+  background: #f954be;
+}
+.tag-js {
+  color: #000;
+  background: #f0db4f;
+}
+.tag-fb {
+  background: #1774eb;
+  color: #f8f8f8;
+}
+.tag-github {
+  color: #fff;
+  background: #24292e;
+}
+.tag-web {
+  background-image: linear-gradient(90deg, #ff8901, #db1d5f);
+  font-weight: 700;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .tag {
+    font-size: 2em;
+  }
+}
+
+.icon__github {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  background: url("/static/images/github.svg") no-repeat;
+  background-size: cover;
+}
+.icon__facebook {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  background: url("/static/images/facebook.svg") no-repeat;
+}
+.icon__instagram {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  background: url("/static/images/instagram.svg") no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
