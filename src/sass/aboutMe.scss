@@ -30,12 +30,14 @@
     }
 
     &__container{
-        background-color: rgba(255,255,255,0.82);
+        background-color: var(--card-bg);
+        box-shadow: var(--card-shadow);
         margin: 15px 0px 0px 0px;
         padding: 30px 30px 40px 30px;
     }
 
     &__h2{
+        color: var(--h-color);
         font-weight: 800;
         font-size: 1.8em;
         line-height: 1;

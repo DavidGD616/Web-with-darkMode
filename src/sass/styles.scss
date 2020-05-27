@@ -4,6 +4,7 @@
 @import './aboutMe.scss';
 @import './skills.scss';
 @import './footer.scss';
+@import './darkSwitch.scss';
 
 :root{
     --red: #ff3860;
@@ -37,22 +38,25 @@
     --font-size: 20px;
     --orange-pink: linear-gradient(to bottom right,var(--orange-light),var(--orange-dark) 85%);
     --green-grad: linear-gradient(to bottom right,var(--green-light),var(--green-dark) 85%);
-    --background: var(--gray6);
-    --text-color: var(--gray5);
-    --h-color: #fff;
-    --nav-shadow: 4px 0 10px -3px #010101;
-    --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
-    --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
-    --nav-bg: var(--gray2);
-    --tag-bg: var(--gray2);
-    --code-bg: #22262f;
-    --card-bg: var(--gray5);
-    --overlay-bg: rgba(0,0,0,0.9);
-    --h-border: 2px dashed var(--nav-bg);
-    --nav-border: 2px dashed var(--text-color);
-    --card-radius: 0.25em;
-    transition: all .3s ease;
-    --wrapperSpace: 1.5em;
+
+    --switchSpinner: white;
+    --switch: #5f616d;
+    // --background: var(--gray6);
+    // --text-color: var(--gray5);
+    // --h-color: #fff;
+    // --nav-shadow: 4px 0 10px -3px #010101;
+    // --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    // --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
+    // --nav-bg: var(--gray2);
+    // --tag-bg: var(--gray2);
+    // --code-bg: #22262f;
+    // --card-bg: var(--gray5);
+    // --overlay-bg: rgba(0,0,0,0.9);
+    // --h-border: 2px dashed var(--nav-bg);
+    // --nav-border: 2px dashed var(--text-color);
+    // --card-radius: 0.25em;
+    // transition: all .3s ease;
+    // --wrapperSpace: 1.5em;
 }
 
 
@@ -61,7 +65,15 @@ body{
     margin: 0;
     font-family: 'Muli', sans-serif;
     overflow-x: hidden;
-    background-color: var(--gray0);
+    background: var( --background);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--text-color);
+}
+
+p{
+    color: var(--text-color);
 }
 
 .wrapper{
@@ -149,6 +161,64 @@ hr{
         @include icon;
         background: url('/static/images/instagram.svg') no-repeat;
         background-size: cover;
+    }
+}
+
+.is-dark-mode {
+    --background: var(--gray6);
+    --text-color: var(--gray2);
+    --h-color: #fff;
+    --nav-shadow: 4px 0 10px -3px #010101;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
+    --nav-bg: var(--gray5);
+    --tag-bg: var(--gray4);
+    --code-bg: #22262f;
+    --card-bg: var(--gray5);
+    --overlay-bg: rgba(0,0,0,0.9);
+    --h-border: 2px dashed var(--nav-bg);
+    --card-radius: 0.25em;
+    transition: all .3s ease;
+    --switchSpinner: #282943;
+    --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+}
+
+.is-light-mode {
+    --background: var(--gray0);
+    --text-color: var(--gray4);
+    --h-color: var(--gray6);
+    --nav-shadow: 4px 0 10px -3px #c1c1c1;
+    --card-shadow: 0 4px 8px rgba(0,30,84,0.12);
+    --toc-shadow: rgba(0,0,0,0.2) 0px 10px 20px 0px;
+    --nav-bg: #fff;
+    --tag-bg: var(--gray2);
+    --code-bg: #fff;
+    --card-bg: #fff;
+    --overlay-bg: hsla(0,0%,100%,0.9);
+    --h-border: 2px dashed var(--gray1);
+    transition: all .5s ease;
+    --switchSpinner: white;
+    --switch: #5f616d; 
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --background: var(--gray6);
+        --text-color: var(--gray2);
+        --h-color: #fff;
+        --nav-shadow: 4px 0 10px -3px #010101;
+        --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
+        --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
+        --nav-bg: var(--gray5);
+        --tag-bg: var(--gray4);
+        --code-bg: #22262f;
+        --card-bg: var(--gray5);
+        --overlay-bg: rgba(0,0,0,0.9);
+        --h-border: 2px dashed var(--nav-bg);
+        --card-radius: 0.25em;
+        transition: all .3s ease;
+        --switchSpinner: #282943;
+        --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
     }
 }
 

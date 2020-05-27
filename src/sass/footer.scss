@@ -8,7 +8,7 @@
         margin-bottom: 2em;
         font-weight: 300;
         font-size: 18px;
-        color: #000000;
+        color: var(--text-color);
     }
 
     &__social{
@@ -17,6 +17,7 @@
         grid-column-gap: 1em;
         justify-content: center;
         margin: 2.5em 0;
+        // background-color: var(--text-color);
         // border: 1px solid red;
     }
     
