@@ -141,6 +141,7 @@
   padding: 30px 30px 40px 30px;
 }
 .aboutMe__h2 {
+  color: var(--h-color);
   font-weight: 800;
   font-size: 1.8em;
   line-height: 1;
