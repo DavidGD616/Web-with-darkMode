@@ -38,7 +38,6 @@
 .menu__button {
   width: 40px;
   height: 40px;
-  background: url("/static/images/hamburger.svg") no-repeat center;
   z-index: 999;
   background-color: #ffffff;
 }
@@ -301,6 +300,22 @@
   --green-grad: linear-gradient(to bottom right,var(--green-light),var(--green-dark) 85%);
   --switchSpinner: white;
   --switch: #5f616d;
+  --background: var(--gray0);
+  --text-color: var(--gray4);
+  --h-color: var(--gray6);
+  --nav-shadow: 4px 0 10px -3px #c1c1c1;
+  --card-shadow: 0 4px 8px rgba(0,30,84,0.12);
+  --toc-shadow: rgba(0,0,0,0.2) 0px 10px 20px 0px;
+  --nav-bg: #fff;
+  --tag-bg: var(--gray2);
+  --code-bg: #fff;
+  --card-bg: #fff;
+  --overlay-bg: hsla(0,0%,100%,0.9);
+  --h-border: 2px dashed var(--gray1);
+  transition: all 0.5s ease;
+  --switchSpinner: white;
+  --switch: #5f616d;
+  --wrapperSpace: 1.5em;
 }
 
 body {
