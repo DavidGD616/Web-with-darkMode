@@ -97,14 +97,14 @@
 .hero {
   text-align: center;
   padding-bottom: 3em;
-  padding-top: 10em;
+  padding-top: 5em;
   height: 300px;
 }
 
 .title__h1 {
   color: var(--h-color);
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .aboutMe {
